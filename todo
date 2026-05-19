@@ -1,0 +1,91 @@
+Suggested Story Arc
+
+Instead of random queries, divide project into “business questions.”
+
+That is what analysts actually do.
+
+Example structure:
+
+1. Revenue Overview
+
+Questions:
+
+Which customers generate most revenue?
+Which categories sell best?
+Are sales stable over time?
+
+Queries:
+
+Top customers
+Monthly revenue trend
+Best-selling categories
+
+Narrative:
+
+“A small number of customers contribute disproportionately to revenue.”
+
+Classic Pareto stuff. Safe business insight.
+
+2. Operational Problems
+
+Questions:
+
+Are shipments delayed?
+Which shippers perform worst?
+Are some products sitting unused?
+
+Queries:
+
+Average shipping delay
+Products never ordered
+Slow-moving inventory
+
+Narrative:
+
+“Several products appear inactive and may represent inventory inefficiency.”
+
+That sounds professional without pretending you discovered capitalism.
+
+3. Employee Performance
+
+Questions:
+
+Which employees handle highest sales?
+Are workloads uneven?
+
+Queries:
+
+Employee sales ranking
+Orders per employee
+
+Narrative:
+
+“Sales distribution between employees is uneven, though additional staffing/context data would be needed before drawing conclusions.”
+
+Important analyst skill:
+not overclaiming from weak data.
+
+4. Customer Behavior
+
+Questions:
+
+Which products are often bought together?
+Which customers became inactive?
+
+Queries:
+
+Product pair analysis
+Customers with no orders
+
+Narrative:
+
+“Some recurring product combinations may support bundling or recommendation strategies.”
+
+Tiny baby Amazon emerges from the swamp
+
+
+---
+## Example projects
+https://www.alphasentaurii.com/projects/datascience/northwind/demo.html 
+https://github.com/Abhi-as/Northwind-SQL-Project
+https://oseland84.github.io/module_2_final_project_-_northwind_database
