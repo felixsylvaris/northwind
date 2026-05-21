@@ -24,6 +24,8 @@ Question 2: Which product categories generate the most revenue?
 Question 3: How does revenue evolve over time?  
 Question 4: Average shipping time? And sipping delays?
 Question 5: Shipper Performance Comparison
+Question 4.4: Product which never moved.
+Question 4.5: Low frequency inventory. 
 
 ---
 # Skill Used
@@ -130,6 +132,26 @@ The results show that all three shippers handle a similar number of orders and e
 This suggests that shipper performance in the dataset is highly uniform, with no single carrier demonstrating significantly better or worse operational efficiency.
 
 As a result, differences in overall logistics performance are unlikely to be driven by the choice of shipper alone.
+
+### 4.4 Products Never Ordered
+
+This analysis checks whether any products exist in the catalog that have no recorded sales activity.
+
+The result shows that all products appear at least once in the order details table, meaning there are no completely inactive products in the dataset.
+
+This suggests that the product catalog is fully represented in transactional data, with no unused or orphaned product entries.
+
+In real-world datasets, it is common to find inactive or never-sold products, so this result may reflect the structured nature of the dataset rather than a fully realistic retail environment.
+
+### 4.5 Slow-Moving Products (Low Frequency Sales)
+
+This analysis identifies products with relatively low order frequency based on the number of times each product appears in transaction records.
+
+The results show a group of products with consistently low sales counts compared to the broader product catalog. These items represent the long-tail portion of product demand, where many products sell infrequently but are still part of regular transactional activity.
+
+Importantly, all products in the dataset are sold at least once, indicating that low activity does not imply lack of demand, but rather lower relative frequency within a diversified product catalog.
+
+This pattern is consistent with typical retail distributions where a small subset of products accounts for a large share of total sales.
 
 ---
 # Summary
