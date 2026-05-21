@@ -22,6 +22,7 @@ SQL project with Northwind DB
 Question 1: Top customers by revenue  
 Question 2: Which product categories generate the most revenue?  
 Question 3: How does revenue evolve over time?  
+Question 4: Average shipping time? And sipping delays?
 
 ---
 # Skill Used
@@ -96,6 +97,28 @@ The results help smooth out short-term fluctuations and highlight whether certai
 This type of analysis is commonly used in business intelligence to detect seasonality in sales cycles.
 
 Because the dataset is synthetic, any observed patterns should be interpreted as descriptive rather than predictive.
+
+### 4.1 Shipping Time Distribution
+
+This analysis evaluates the time required to process and ship orders by measuring the difference between order date and shipment date.
+
+The average shipping time is approximately 8 days, indicating a relatively consistent fulfillment process across the dataset.
+
+However, the distribution shows significant variation. While some orders are shipped almost immediately, others take over a month to be fulfilled.
+
+This suggests that although the typical shipping process is stable, there are occasional extreme delays or outlier cases that significantly extend fulfillment time.
+
+These outliers may reflect backlog situations, operational inefficiencies, or synthetic data variability within the dataset.
+
+### 4.2 Shipment Delays (Required Delivery Date Analysis)
+
+This analysis compares actual shipment dates against required delivery dates to evaluate fulfillment timeliness.
+
+Out of 16,261 total orders, 3,755 were shipped after their required delivery date, representing approximately 23.09% of all orders.
+
+This indicates that nearly one in four orders did not meet the expected delivery timeframe.
+
+While this suggests a meaningful level of delay within the dataset, the analysis does not include contractual delivery definitions, customer priority levels, or logistics constraints. Therefore, results should be interpreted as indicative rather than definitive operational performance.
 
 ---
 # Summary
