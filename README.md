@@ -19,6 +19,8 @@ SQL project with Northwind DB
 
 ---
 # Query list
+Question 1: Top customers by revenue
+Question 2: Which product categories generate the most revenue?
 
 ---
 # Skill Used
@@ -43,6 +45,28 @@ Result   (Top 10 customers)
 +   LILA-Supermercado – 5,437,438.34
 
   Interpretation Revenue is highly concentrated among a small number of customers, with the top customer significantly ahead of others. The distribution suggests that a few high-volume clients drive a large share of total sales, while the rest of the customer base is relatively evenly distributed within the top tier.
+
+### Question 2: Which product categories generate the most revenue?
+
+This query analyzes total revenue by product category using order transaction data from the Northwind database. Revenue was calculated using the formula:
+
+`unitprice × quantity × (1 - discount)`
+
+The analysis shows that revenue distribution across categories is uneven.  
+`Beverages` generated the highest total revenue, followed by `Confections` and `Meat/Poultry`. Lower-performing categories included `Produce` and `Grains/Cereals`.
+
+| Rank | Category | Revenue |
+|---|---|---:|
+| 1 | Beverages | 92,163,184.18 |
+| 2 | Confections | 66,337,803.06 |
+| 3 | Meat/Poultry | 64,881,147.97 |
+| 4 | Dairy Products | 58,018,116.78 |
+| 5 | Condiments | 55,795,126.78 |
+| 6 | Seafood | 49,921,604.17 |
+| 7 | Produce | 32,701,119.88 |
+| 8 | Grains/Cereals | 28,568,530.34 |
+
+This may suggest that a relatively small number of categories contribute disproportionately to total sales revenue. However, revenue alone does not reflect profitability, operational cost, or inventory efficiency, so additional business context would be required before making strategic conclusions.
 
 ---
 # Summary
