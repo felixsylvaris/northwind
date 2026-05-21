@@ -23,6 +23,7 @@ Question 1: Top customers by revenue
 Question 2: Which product categories generate the most revenue?  
 Question 3: How does revenue evolve over time?  
 Question 4: Average shipping time? And sipping delays?
+Question 5: Shipper Performance Comparison
 
 ---
 # Skill Used
@@ -119,6 +120,16 @@ Out of 16,261 total orders, 3,755 were shipped after their required delivery dat
 This indicates that nearly one in four orders did not meet the expected delivery timeframe.
 
 While this suggests a meaningful level of delay within the dataset, the analysis does not include contractual delivery definitions, customer priority levels, or logistics constraints. Therefore, results should be interpreted as indicative rather than definitive operational performance.
+
+### 4.3 Shipper Performance Comparison
+
+This analysis compares shipping providers across three key metrics: total order volume, average delivery time, and late delivery rate.
+
+The results show that all three shippers handle a similar number of orders and exhibit nearly identical performance characteristics. Average shipping times differ only marginally (within a few hours), and late delivery rates remain consistently around 23% across all providers.
+
+This suggests that shipper performance in the dataset is highly uniform, with no single carrier demonstrating significantly better or worse operational efficiency.
+
+As a result, differences in overall logistics performance are unlikely to be driven by the choice of shipper alone.
 
 ---
 # Summary
