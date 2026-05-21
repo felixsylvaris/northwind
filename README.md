@@ -21,6 +21,7 @@ SQL project with Northwind DB
 # Query list
 Question 1: Top customers by revenue
 Question 2: Which product categories generate the most revenue?
+Question 3: How does revenue evolve over time?
 
 ---
 # Skill Used
@@ -67,6 +68,34 @@ The analysis shows that revenue distribution across categories is uneven.
 | 8 | Grains/Cereals | 28,568,530.34 |
 
 This may suggest that a relatively small number of categories contribute disproportionately to total sales revenue. However, revenue alone does not reflect profitability, operational cost, or inventory efficiency, so additional business context would be required before making strategic conclusions.
+
+### Question 3: How does revenue evolve over time?
+
+This analysis examines monthly revenue trends across the dataset to evaluate whether sales remain stable or show long-term growth or decline patterns.
+
+Revenue was aggregated on a monthly basis using transaction-level order data.
+
+The results show that monthly revenue fluctuates over time but remains broadly within a consistent range throughout the observed period. There is no strong indication of sustained long-term growth or decline across the dataset.
+
+However, repeated peaks and dips suggest the presence of cyclical or seasonal effects, particularly with stronger performance in certain months and weaker performance in others.
+
+Because the dataset spans multiple years but does not include external context (such as marketing campaigns, pricing changes, or macroeconomic factors), these fluctuations should be interpreted as descriptive patterns rather than causal conclusions.
+This query aggregates total revenue by year to evaluate long-term sales trends.
+
+The results show relatively stable annual revenue across the observed period, with fluctuations between years but no clear sustained upward or downward trend.
+
+This suggests that overall sales volume remains consistent over time, with variation likely driven by shorter-term seasonal or cyclical effects rather than structural growth or decline.
+### 3.2 Sales by Month (Average Seasonal Pattern)
+
+This analysis evaluates average monthly revenue across all years in the dataset to identify potential seasonal patterns.
+
+Instead of examining individual months in isolation, this approach aggregates revenue by month-of-year and computes the average performance for each month across the full time period.
+
+The results help smooth out short-term fluctuations and highlight whether certain months consistently perform better or worse than others.
+
+This type of analysis is commonly used in business intelligence to detect seasonality in sales cycles.
+
+Because the dataset is synthetic, any observed patterns should be interpreted as descriptive rather than predictive.
 
 ---
 # Summary
