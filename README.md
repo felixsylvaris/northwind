@@ -19,9 +19,9 @@ SQL project with Northwind DB
 
 ---
 # Query list
-Question 1: Top customers by revenue
-Question 2: Which product categories generate the most revenue?
-Question 3: How does revenue evolve over time?
+Question 1: Top customers by revenue  
+Question 2: Which product categories generate the most revenue?  
+Question 3: How does revenue evolve over time?  
 
 ---
 # Skill Used
