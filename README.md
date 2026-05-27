@@ -19,13 +19,17 @@ SQL project with Northwind DB
 
 ---
 # Query list
-Question 1: Top customers by revenue  
-Question 2: Which product categories generate the most revenue?  
-Question 3: How does revenue evolve over time?  
-Question 4: Average shipping time? And sipping delays?
-Question 5: Shipper Performance Comparison
-Question 4.4: Product which never moved.
-Question 4.5: Low frequency inventory. 
++ Question 1: Top customers by revenue  
++ Question 2: Which product categories generate the most revenue?  
++ Question 3: How does revenue evolve over time?  
++ Question 4: Average shipping time? And sipping delays?
++ Question 5: Shipper Performance Comparison
++ Question 4.4: Product which never moved.
++ Question 4.5: Low frequency inventory.
++ Question 5 Which employees handle the highest sales?
++ Question 6: Are workloads evenly distributed between employees?
++ Question 7: Which products are often bought together?
++ Question 8.1: Who is our best customer?
 
 ---
 # Skill Used
@@ -151,7 +155,43 @@ The results show a group of products with consistently low sales counts compared
 
 Importantly, all products in the dataset are sold at least once, indicating that low activity does not imply lack of demand, but rather lower relative frequency within a diversified product catalog.
 
+### Question 5 Which employees handle the highest sales?
+
+
+Employee sales performance appears relatively balanced across the organization, with only moderate differences between the top and bottom ranked employees. Margaret Peacock achieved the highest total sales, although the gap between ranks remains fairly small compared to total transaction volume.
+
+The query demonstrates the use of SQL window functions through RANK() OVER(), allowing employee performance rankings to be calculated without losing aggregated sales data.
+
+Note: The dataset used is a synthetic Northwind-style transactional dataset intended for analytical practice and SQL portfolio development.
+
 This pattern is consistent with typical retail distributions where a small subset of products accounts for a large share of total sales.
 
+### Question 6: Are workloads evenly distributed between employees?
+
+Employee workloads are distributed very evenly across the organization. The difference between the highest and lowest order counts is relatively small, with all employees operating close to the organizational average.
+
+Margaret Peacock handled the highest number of orders, although the gap compared to other employees remains modest. The workload distribution suggests a highly balanced allocation of operational responsibilities across employees.
+
+This query demonstrates the use of SQL window functions for ranking and organizational benchmarking by comparing each employee's workload against the average employee workload.
+
+Note: The dataset used is a synthetic Northwind-style transactional dataset intended for analytical practice and SQL portfolio development.
+
+### Question 7: Which products are often bought together?
+The results show a strong co-purchase concentration around a small subset of products, particularly Louisiana Hot Spiced Okra, which appears in nearly all top product pairings.
+
+This suggests that certain high-frequency products act as “hub items” in purchasing behavior, frequently appearing alongside many other products. Such patterns may indicate either a highly popular staple product or a structural bias in ordering behavior within the dataset.
+
+The analysis demonstrates how self-joins can be used to uncover product relationships and support market basket analysis in SQL.
+
+### Question 8.1: Who is our best customer?
+
+Customer revenue is highly concentrated among a small group of clients, with a clear top tier generating significantly more value than the rest of the customer base.
+
+The distribution suggests that a relatively small number of customers account for a disproportionate share of total revenue, which is a common pattern in transactional datasets. This indicates strong dependency on key accounts rather than evenly distributed customer value.
+
+### Question 9. What is trend in customer activity. 
+Order volume increases sharply after 2012 and peaks around 2017. After this peak, the dataset shows a gradual decline and stabilization, with a noticeable drop in 2023. All customers present in dataset were still active in 2024. 
+
+Since this is a synthetic dataset, the trend likely reflects data generation patterns rather than real-world demand dynamics. However, it still demonstrates how SQL can be used to extract temporal patterns and detect structural changes in transactional activity over time.
 ---
 # Summary
